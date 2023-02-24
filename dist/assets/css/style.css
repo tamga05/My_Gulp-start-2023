@@ -5,6 +5,14 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shantell+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=La+Belle+Aurore&family=Shantell+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Meie+Script&display=swap");
+
 html {
     line-height: 1.15;
  /* 1 */
@@ -341,6 +349,7 @@ template {
 .greeting {
     font-weight: bold;
     font-size: 55px;
+    font-family: "La Belle Aurore", cursive;
     text-align: center;
     width: 100vw;
     height: 100vh;
