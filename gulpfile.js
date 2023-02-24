@@ -16,7 +16,7 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
-// const ghPages = require('gulp-gh-pages');
+const ghPages = require('gulp-gh-pages');
 
 
 /* Paths */
@@ -50,10 +50,10 @@ const path = {
 
 
 // Таска для Создания Сайта на gh-pages и "Деплоя" на этот сайт моего проекта.
-// gulp.task('deploy', function () {
-//     return gulp.src('./dist/**/*')
-//         .pipe(ghPages());
-// });
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 function serve() {
     browserSync.init({
@@ -195,7 +195,7 @@ exports.default = watch;
 
 // 5. Соблюдаем файловую структуру или в сборках подправляем пути "откуда берём"/"куда кладём" файлы.
 
-// 6. !!!!! Для Деплоя готового проекта на GitHub-pages РАСКОММЕНТИРОВАТЬ (если она закомментирована) строку 19 ЭТОГО файла Gulpfile.js, в консоли ввести сначала команду npm install --save-dev gulp-gh-pages и после её отработки ввести команду gulp deploy   !!!!!
+// 6. !!!!! Для Деплоя готового проекта на GitHub-pages РАСКОММЕНТИРОВАТЬ (если она закомментирована) строки 19 и 53-56 ЭТОГО файла Gulpfile.js, в консоли ввести сначала команду npm install --save-dev gulp-gh-pages и после её отработки ввести команду gulp deploy   !!!!!
 
 // 7. !!!!!!!!!! После того, как Деплой без ошибок завершён, в консоли написать и поочерёдно запустить 3 команды: git add . и git commit -m"deploy" и git push !!!!!!!!!!
 
