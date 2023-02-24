@@ -1,17 +1,3 @@
 @import "normalize";
 
-.greeting {
-  font-weight: bold;
-  font-size: 55px;
-
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  color: rgb(255, 72, 68);
-  text-shadow: 2px 2px 3px rgba(255, 72, 68, 0.6);
-}
+@import "greeting";
