@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const {src, dest} = require('gulp');
 const gulp = require('gulp');
@@ -55,6 +55,7 @@ gulp.task('deploy', function () {
         .pipe(ghPages());
 });
 
+// Локальный сервер.
 function serve() {
     browserSync.init({
         server: {
@@ -165,9 +166,8 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
-const watch = gulp.parallel(build, watchFiles, serve);
-
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build.
+const watch = gulp.series(build, gulp.parallel(watchFiles, serve)); // Будет запускаться по дефолтной команде gulp.
 
 exports.html = html;
 exports.css = css;
