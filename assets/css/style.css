@@ -13,6 +13,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Meie+Script&display=swap");
 
+@import url("https://fonts.cdnfonts.com/css/schwabacher");
+
+@import url("https://fonts.cdnfonts.com/css/costpretty");
+
+@import url("https://fonts.cdnfonts.com/css/raw-almond");
+
+@import url("https://fonts.cdnfonts.com/css/amrelia");
+
+@import url("https://fonts.cdnfonts.com/css/offenbacherschwabachercat");
+
+@import url("https://fonts.cdnfonts.com/css/raslani-hip-hop");
+
 html {
     line-height: 1.15;
  /* 1 */
@@ -349,7 +361,7 @@ template {
 .greeting {
     font-weight: bold;
     font-size: 55px;
-    font-family: "Indie Flower", cursive;
+    font-family: "Raslani Hip Hop", sans-serif;
     text-align: center;
     width: 100vw;
     height: 100vh;
